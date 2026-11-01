@@ -2,7 +2,7 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const FACE="assets/akbar-head.webp";
 $('#faceimg').setAttribute('href',FACE);
 
-$('#titleText').textContent=CONFIG.title; document.title=CONFIG.title;
+$('#titleText').textContent=CONFIG.title;
 let cur=1, typing=null, photos={};
 
 function go(n){

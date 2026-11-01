@@ -1,300 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
-    <meta name="color-scheme" content="light" />
-    <title>Happy Birthday Cintaku</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@500;700&family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Scene 1 -->
-    <div class="scene on" id="s1">
-      <svg viewBox="0 0 420 345" aria-label="Happy Birthday Akbar">
-        <defs>
-          <path id="arc" d="M20 160 Q210 -50 400 160" />
-          <clipPath id="fc">
-            <rect x="0" y="0" width="420" height="235" />
-            <circle cx="210" cy="235" r="84" />
-          </clipPath>
-          <clipPath id="hc"><path d="M210 88L163 184H257Z" /></clipPath>
-        </defs>
-        <text
-          font-family="Permanent Marker, cursive"
-          font-size="33"
-          fill="#ffc400"
-        >
-          <textPath
-            href="#arc"
-            startOffset="50%"
-            text-anchor="middle"
-            id="titleText"
-          >
-            HAPPY BIRTHDAY AKBAR
-          </textPath>
-        </text>
-        <circle
-          cx="210"
-          cy="235"
-          r="88"
-          fill="#14080a"
-          stroke="#e11d26"
-          stroke-width="7"
-        />
-        <image
-          id="faceimg"
-          x="145"
-          y="164"
-          width="130"
-          height="158"
-          clip-path="url(#fc)"
-          preserveAspectRatio="xMidYMid meet"
-        />
-        <g transform="rotate(-9 210 182)">
-          <g clip-path="url(#hc)">
-            <rect x="150" y="80" width="120" height="110" fill="#ffc400" />
-            <path
-              d="M150 168L270 132M150 146L270 110M150 124L270 88M150 190L270 154"
-              stroke="#e11d26"
-              stroke-width="10"
-            />
-          </g>
-          <path
-            d="M210 88L163 184H257Z"
-            fill="none"
-            stroke="#fff"
-            stroke-width="3"
-            stroke-linejoin="round"
-          />
-          <ellipse
-            cx="210"
-            cy="184"
-            rx="49"
-            ry="7"
-            fill="#e11d26"
-            stroke="#fff"
-            stroke-width="2.5"
-          />
-          <circle
-            cx="210"
-            cy="86"
-            r="9"
-            fill="#e11d26"
-            stroke="#fff"
-            stroke-width="3"
-          />
-        </g>
-      </svg>
-      <div
-        class="spr sp-henshin"
-        style="position: relative; height: 30vh"
-      ></div>
-      <div class="hint">ketuk untuk membuka ↓</div>
-    </div>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Happy Birthday Sayang</title>
+<meta property="og:title" content="Happy Birthday Sayang">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@500;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Scene 3 -->
-    <div class="scene red" id="s3">
-      <svg class="photon" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path
-          d="M-5 14L40 0M-5 26L62 0M-5 38L84 0"
-          vector-effect="non-scaling-stroke"
-        />
-        <path
-          d="M105 88L60 100M105 76L38 100M105 64L16 100"
-          vector-effect="non-scaling-stroke"
-        />
-      </svg>
-      <div
-        class="spr sp-edge"
-        style="left: 1vw; bottom: 1vh; width: min(26vw, 120px)"
-      ></div>
-      <div
-        class="spr sp-shot"
-        style="right: 1vw; bottom: 1vh; width: min(22vw, 100px)"
-      ></div>
-      <div
-        class="spr sp-gun"
-        style="
-          left: 1vw;
-          top: 1vh;
-          width: min(24vw, 110px);
-          transform: scaleX(-1);
-        "
-      ></div>
-      <div
-        class="spr sp-kick"
-        style="right: 1vw; top: 1vh; width: min(28vw, 130px)"
-      ></div>
-      <div class="letter" id="letter"></div>
-      <button class="next" id="next">LANJUT 🎂</button>
-    </div>
+<!-- Scene 1 -->
+<div class="scene on" id="s1">
+  <svg viewBox="0 0 420 345" aria-label="Happy Birthday Akbar">
+    <defs><path id="arc" d="M20 160 Q210 -50 400 160"/>
+      <clipPath id="fc"><rect x="0" y="0" width="420" height="235"/><circle cx="210" cy="235" r="84"/></clipPath>
+      <clipPath id="hc"><path d="M210 88L163 184H257Z"/></clipPath></defs>
+    <text font-family="Permanent Marker, cursive" font-size="33" fill="#ffc400">
+      <textPath href="#arc" startOffset="50%" text-anchor="middle" id="titleText">HAPPY BIRTHDAY AKBAR</textPath></text>
+    <circle cx="210" cy="235" r="88" fill="#14080a" stroke="#e11d26" stroke-width="7"/>
+    <image id="faceimg" x="145" y="164" width="130" height="158" clip-path="url(#fc)" preserveAspectRatio="xMidYMid meet"/>
+    <g transform="rotate(-9 210 182)">
+      <g clip-path="url(#hc)"><rect x="150" y="80" width="120" height="110" fill="#ffc400"/>
+        <path d="M150 168L270 132M150 146L270 110M150 124L270 88M150 190L270 154" stroke="#e11d26" stroke-width="10"/></g>
+      <path d="M210 88L163 184H257Z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+      <ellipse cx="210" cy="184" rx="49" ry="7" fill="#e11d26" stroke="#fff" stroke-width="2.5"/>
+      <circle cx="210" cy="86" r="9" fill="#e11d26" stroke="#fff" stroke-width="3"/>
+    </g>
+  </svg>
+  <div class="spr sp-henshin" style="position:relative;height:30vh"></div>
+  <div class="hint">ketuk untuk membuka ↓</div>
+</div>
 
-    <!-- Scene 5: tiup lilin -->
-    <div class="scene red" id="s5">
-      <div id="cakehint">
-        Buat permintaan dulu… lalu ketuk Kamen Rider untuk meniup lilin 🎂
-      </div>
-      <svg id="cake" viewBox="0 0 300 300" aria-label="Kue ulang tahun">
-        <ellipse cx="150" cy="285" rx="140" ry="12" fill="#0003" />
-        <rect x="30" y="215" width="240" height="65" rx="12" fill="#fff" />
-        <path
-          d="M30 227Q30 215 42 215H258Q270 215 270 227V240Q255 252 240 240Q225 252 210 240Q195 252 180 240Q165 252 150 240Q135 252 120 240Q105 252 90 240Q75 252 60 240Q45 252 30 240Z"
-          fill="#ffb3b6"
-        />
-        <rect x="65" y="160" width="170" height="60" rx="10" fill="#ffe9e9" />
-        <path
-          d="M65 172Q65 160 77 160H223Q235 160 235 172V184Q222 196 208 184Q194 196 180 184Q166 196 150 184Q136 196 122 184Q108 196 94 184Q80 196 65 184Z"
-          fill="#d90f14"
-          stroke="#fff"
-          stroke-width="2"
-        />
-        <g fill="#2b4fa8">
-          <circle cx="100" cy="250" r="6" />
-          <circle cx="150" cy="258" r="6" />
-          <circle cx="200" cy="250" r="6" />
-        </g>
-        <g id="candles">
-          <rect x="92" y="110" width="10" height="50" rx="2" fill="#ffd400" />
-          <rect x="122" y="110" width="10" height="50" rx="2" fill="#fff" />
-          <rect x="145" y="105" width="10" height="55" rx="2" fill="#2b4fa8" />
-          <rect x="168" y="110" width="10" height="50" rx="2" fill="#fff" />
-          <rect x="198" y="110" width="10" height="50" rx="2" fill="#ffd400" />
-        </g>
-        <g id="flames">
-          <g class="fl" transform="translate(97 108)">
-            <path
-              d="M0 0C-9 -12 -4 -24 0 -34C4 -24 9 -12 0 0Z"
-              fill="#ffd400"
-            />
-            <path d="M0 0C-4 -6 -2 -12 0 -16C2 -12 4 -6 0 0Z" fill="#ff7a00" />
-            <rect x="-22" y="-40" width="44" height="48" fill="#0000" />
-          </g>
-          <path class="smk" d="M97 100Q90 88 98 78Q106 68 98 58" />
-          <g class="fl" transform="translate(127 108)">
-            <path
-              d="M0 0C-9 -12 -4 -24 0 -34C4 -24 9 -12 0 0Z"
-              fill="#ffd400"
-            />
-            <path d="M0 0C-4 -6 -2 -12 0 -16C2 -12 4 -6 0 0Z" fill="#ff7a00" />
-            <rect x="-22" y="-40" width="44" height="48" fill="#0000" />
-          </g>
-          <path class="smk" d="M127 100Q120 88 128 78Q136 68 128 58" />
-          <g class="fl" transform="translate(150 103)">
-            <path
-              d="M0 0C-9 -12 -4 -24 0 -34C4 -24 9 -12 0 0Z"
-              fill="#ffd400"
-            />
-            <path d="M0 0C-4 -6 -2 -12 0 -16C2 -12 4 -6 0 0Z" fill="#ff7a00" />
-            <rect x="-22" y="-40" width="44" height="48" fill="#0000" />
-          </g>
-          <path class="smk" d="M150 95Q143 83 151 73Q159 63 151 53" />
-          <g class="fl" transform="translate(173 108)">
-            <path
-              d="M0 0C-9 -12 -4 -24 0 -34C4 -24 9 -12 0 0Z"
-              fill="#ffd400"
-            />
-            <path d="M0 0C-4 -6 -2 -12 0 -16C2 -12 4 -6 0 0Z" fill="#ff7a00" />
-            <rect x="-22" y="-40" width="44" height="48" fill="#0000" />
-          </g>
-          <path class="smk" d="M173 100Q166 88 174 78Q182 68 174 58" />
-          <g class="fl" transform="translate(203 108)">
-            <path
-              d="M0 0C-9 -12 -4 -24 0 -34C4 -24 9 -12 0 0Z"
-              fill="#ffd400"
-            />
-            <path d="M0 0C-4 -6 -2 -12 0 -16C2 -12 4 -6 0 0Z" fill="#ff7a00" />
-            <rect x="-22" y="-40" width="44" height="48" fill="#0000" />
-          </g>
-          <path class="smk" d="M203 100Q196 88 204 78Q212 68 204 58" />
-        </g>
-      </svg>
-      <div
-        class="spr sp-focus"
-        id="blower"
-        style="
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: 7vh;
-          width: min(30vw, 130px);
-          cursor: pointer;
-          animation: pulse 1.2s ease-in-out infinite;
-        "
-      ></div>
-      <div id="wish">
-        <div class="spr sp-vajin" style="aspect-ratio: 335/325"></div>
-        Semoga semua doamu terkabul ✨<small>Selamat ulang tahun!</small>
-      </div>
-    </div>
+<!-- Scene 3 -->
+<div class="scene red" id="s3">
+  <svg class="photon" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path d="M-5 14L40 0M-5 26L62 0M-5 38L84 0" vector-effect="non-scaling-stroke"/>
+    <path d="M105 88L60 100M105 76L38 100M105 64L16 100" vector-effect="non-scaling-stroke"/></svg>
+  <div class="spr sp-edge" style="left:1vw;bottom:1vh;width:min(26vw,120px)"></div>
+  <div class="spr sp-shot" style="right:1vw;bottom:1vh;width:min(22vw,100px)"></div>
+  <div class="spr sp-gun" style="left:1vw;top:1vh;width:min(24vw,110px);transform:scaleX(-1)"></div>
+  <div class="spr sp-kick" style="right:1vw;top:1vh;width:min(28vw,130px)"></div>
+  <div class="letter" id="letter"></div>
+  <button class="next" id="next">LANJUT 🎂</button>
+</div>
 
-    <!-- Scene 4 -->
-    <div class="scene" id="s4">
-      <canvas id="conf"></canvas>
-      <div id="hb"></div>
-      <div id="gal">
-        <div
-          class="pol has"
-          data-photo="2"
-          style="--r: 0.8; transform: rotate(-2deg)"
-        >
-          <i class="tape"></i>
-          <div
-            class="ph"
-            data-ph="2"
-            style="--ar: 4/5; background-image: url(assets/photos/foto-2.jpg)"
-          >
-            <span>+ foto</span>
-          </div>
-        </div>
-        <div
-          class="pol has couple"
-          data-photo="1"
-          style="--r: 1.25; transform: rotate(1.5deg)"
-        >
-          <i class="tape"></i>
-          <div
-            class="ph"
-            data-ph="1"
-            style="--ar: 5/4; background-image: url(assets/photos/foto-1.jpg)"
-          >
-            <span>+ foto</span>
-          </div>
-        </div>
-        <div
-          class="pol has"
-          data-photo="0"
-          style="--r: 0.8; transform: rotate(2deg)"
-        >
-          <i class="tape"></i>
-          <div
-            class="ph"
-            data-ph="0"
-            style="--ar: 4/5; background-image: url(assets/photos/foto-3.jpg)"
-          >
-            <span>+ foto</span>
-          </div>
-        </div>
-      </div>
-      <div
-        class="spr sp-kick fly"
-        style="top: 5vh; width: min(26vw, 120px)"
-      ></div>
-      <div id="foot">
-        <div class="spr sp-gun" style="transform: scaleX(-1)"></div>
-        <button class="again" id="again">↻ ulangi</button>
-        <div class="spr sp-edge"></div>
-      </div>
-    </div>
-    <button id="mute" aria-label="Suara hidup atau mati">🔊</button>
-    <input type="file" id="file" accept="image/*" hidden />
+<!-- Scene 5: tiup lilin -->
+<div class="scene red" id="s5">
+  <div id="cakehint">Buat permintaan dulu… lalu ketuk Kamen Rider untuk meniup lilin 🎂</div>
+  <svg id="cake" viewBox="0 0 300 300" aria-label="Kue ulang tahun">
+    <ellipse cx="150" cy="285" rx="140" ry="12" fill="#0003"/>
+    <rect x="30" y="215" width="240" height="65" rx="12" fill="#fff"/>
+    <path d="M30 227Q30 215 42 215H258Q270 215 270 227V240Q255 252 240 240Q225 252 210 240Q195 252 180 240Q165 252 150 240Q135 252 120 240Q105 252 90 240Q75 252 60 240Q45 252 30 240Z" fill="#ffb3b6"/>
+    <rect x="65" y="160" width="170" height="60" rx="10" fill="#ffe9e9"/>
+    <path d="M65 172Q65 160 77 160H223Q235 160 235 172V184Q222 196 208 184Q194 196 180 184Q166 196 150 184Q136 196 122 184Q108 196 94 184Q80 196 65 184Z" fill="#d90f14" stroke="#fff" stroke-width="2"/>
+    <g fill="#2b4fa8"><circle cx="100" cy="250" r="6"/><circle cx="150" cy="258" r="6"/><circle cx="200" cy="250" r="6"/></g>
+    <g id="candles">
+      <rect x="92" y="110" width="10" height="50" rx="2" fill="#ffd400"/><rect x="122" y="110" width="10" height="50" rx="2" fill="#fff"/>
+      <rect x="145" y="105" width="10" height="55" rx="2" fill="#2b4fa8"/><rect x="168" y="110" width="10" height="50" rx="2" fill="#fff"/><rect x="198" y="110" width="10" height="50" rx="2" fill="#ffd400"/>
+    </g>
+    <g id="flames">
+      <g class="fl" transform="translate(97 108)"><path d="M0 0C-9 -12 -4 -24 0 -34C4 -24 9 -12 0 0Z" fill="#ffd400"/><path d="M0 0C-4 -6 -2 -12 0 -16C2 -12 4 -6 0 0Z" fill="#ff7a00"/><rect x="-22" y="-40" width="44" height="48" fill="#0000"/></g><path class="smk" d="M97 100Q90 88 98 78Q106 68 98 58"/>
+      <g class="fl" transform="translate(127 108)"><path d="M0 0C-9 -12 -4 -24 0 -34C4 -24 9 -12 0 0Z" fill="#ffd400"/><path d="M0 0C-4 -6 -2 -12 0 -16C2 -12 4 -6 0 0Z" fill="#ff7a00"/><rect x="-22" y="-40" width="44" height="48" fill="#0000"/></g><path class="smk" d="M127 100Q120 88 128 78Q136 68 128 58"/>
+      <g class="fl" transform="translate(150 103)"><path d="M0 0C-9 -12 -4 -24 0 -34C4 -24 9 -12 0 0Z" fill="#ffd400"/><path d="M0 0C-4 -6 -2 -12 0 -16C2 -12 4 -6 0 0Z" fill="#ff7a00"/><rect x="-22" y="-40" width="44" height="48" fill="#0000"/></g><path class="smk" d="M150 95Q143 83 151 73Q159 63 151 53"/>
+      <g class="fl" transform="translate(173 108)"><path d="M0 0C-9 -12 -4 -24 0 -34C4 -24 9 -12 0 0Z" fill="#ffd400"/><path d="M0 0C-4 -6 -2 -12 0 -16C2 -12 4 -6 0 0Z" fill="#ff7a00"/><rect x="-22" y="-40" width="44" height="48" fill="#0000"/></g><path class="smk" d="M173 100Q166 88 174 78Q182 68 174 58"/>
+      <g class="fl" transform="translate(203 108)"><path d="M0 0C-9 -12 -4 -24 0 -34C4 -24 9 -12 0 0Z" fill="#ffd400"/><path d="M0 0C-4 -6 -2 -12 0 -16C2 -12 4 -6 0 0Z" fill="#ff7a00"/><rect x="-22" y="-40" width="44" height="48" fill="#0000"/></g><path class="smk" d="M203 100Q196 88 204 78Q212 68 204 58"/>
+    </g>
+  </svg>
+  <div class="spr sp-focus" id="blower" style="left:50%;transform:translateX(-50%);bottom:7vh;width:min(30vw,130px);cursor:pointer;animation:pulse 1.2s ease-in-out infinite"></div>
+  <div id="wish"><div class="spr sp-vajin" style="aspect-ratio:335/325"></div>Semoga semua doamu terkabul ✨<small>Selamat ulang tahun!</small></div>
+</div>
 
-    <script src="config.js"></script>
-    <script src="script.js"></script>
-  </body>
+<!-- Scene 4 -->
+<div class="scene" id="s4">
+  <canvas id="conf"></canvas>
+  <div id="hb"></div>
+  <div id="gal">
+  <div class="pol has" data-photo="2" style="--r:.8;transform:rotate(-2deg)"><i class="tape"></i><div class="ph" data-ph="2" style="--ar:4/5;background-image:url(assets/photos/foto-2.jpg)"><span>+ foto</span></div></div>
+  <div class="pol has couple" data-photo="1" style="--r:1.25;transform:rotate(1.5deg)"><i class="tape"></i><div class="ph" data-ph="1" style="--ar:5/4;background-image:url(assets/photos/foto-1.jpg)"><span>+ foto</span></div></div>
+  <div class="pol has" data-photo="0" style="--r:.8;transform:rotate(2deg)"><i class="tape"></i><div class="ph" data-ph="0" style="--ar:4/5;background-image:url(assets/photos/foto-3.jpg)"><span>+ foto</span></div></div>
+  </div>
+  <div class="spr sp-kick fly" style="top:5vh;width:min(26vw,120px)"></div>
+  <div id="foot">
+    <div class="spr sp-gun" style="transform:scaleX(-1)"></div>
+    <button class="again" id="again">↻ ulangi</button>
+    <div class="spr sp-edge"></div>
+  </div>
+</div>
+<button id="mute" aria-label="Suara hidup atau mati">🔊</button>
+<input type="file" id="file" accept="image/*" hidden>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
