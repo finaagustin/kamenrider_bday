@@ -1,0 +1,2 @@
+Taruh file lagu kamu di folder ini dengan nama: lagu.mp3
+(atau nama lain, lalu ubah baris "music" di config.js)
