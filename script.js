@@ -96,19 +96,6 @@ function finale(){
 }
 $('#s4').onclick=e=>{ if(!e.target.closest('.pol,.again')) confetti() };
 
-/* upload foto (tersimpan di memori selama halaman terbuka) */
-let slot=null;
-document.addEventListener('click',e=>{
-  const t=e.target.closest('[data-photo]'); if(!t) return;
-  e.stopPropagation(); slot=t.dataset.photo; $('#file').click();
-},true);
-$('#file').onchange=e=>{
-  const f=e.target.files[0]; if(!f) return;
-  const r=new FileReader();
-  r.onload=()=>{ $$(`[data-ph="${slot}"]`).forEach(el=>{el.style.backgroundImage=`url(${r.result})`;el.parentElement.classList.add('has')}) };
-  r.readAsDataURL(f); e.target.value='';
-};
-
 /* confetti */
 function confetti(){
   const c=$('#conf'),x=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;

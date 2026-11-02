@@ -26,7 +26,6 @@ CARA MENGUBAH ISI
   - Judul, isi surat, tanda tangan : edit config.js
   - Ganti foto kepala             : timpa assets/akbar-head.webp (PNG/WebP transparan, bagian kepala saja)
   - Foto polaroid di layar akhir   : timpa assets/photos/foto-1.jpg (berdua, rasio 5:4), foto-2.jpg dan foto-3.jpg (rasio 4:5)
-                                     Ketuk polaroid saat website dibuka untuk mencoba foto lain (tidak tersimpan saat refresh)
 
 CARA MEMBAGIKAN (GRATIS)
   Unggah seluruh folder ke Netlify Drop (app.netlify.com/drop), GitHub Pages, atau Vercel,
