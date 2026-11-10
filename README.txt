@@ -12,8 +12,8 @@ CARA MEMBUKA
   Klik dua kali index.html. Butuh internet untuk memuat font dari Google Fonts
   (kalau offline, font diganti font bawaan dan tampilannya sedikit berbeda).
 
-  Catatan: fitur tiup lilin lewat mikrofon hanya jalan di https:// atau localhost.
-  Kalau dibuka langsung dari file, lilin tetap bisa dipadamkan dengan mengetuk Kamen Rider.
+  Lilin dipadamkan dengan mengetuk Kamen Rider. Tiup lewat mikrofon dimatikan (micBlow di config.js) karena di HP
+  bisa membuat lagu telat; kalau diaktifkan, hanya jalan di https:// atau localhost.
   Untuk mencoba di komputer:   python3 -m http.server 8000   lalu buka http://localhost:8000
 
 MUSIK

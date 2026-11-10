@@ -40,7 +40,7 @@ function cakeStart(){
   $('#blower').onpointerdown=blowAll; $('#blower').onclick=blowAll; blowing=false;
   $('#wish').classList.remove('on');
   $('#cakehint').textContent='Buat permintaan dulu… lalu ketuk Kamen Rider untuk meniup lilin 🎂';
-  micStart();
+  if(CONFIG.micBlow) micStart();
 }
 function snuff(f){
   if(f.classList.contains('off')) return;
@@ -50,10 +50,15 @@ function snuff(f){
       setTimeout(()=>{ if(cur===5) go(4) },3500) },1500);
   }
 }
+/* jeda lilin = pengaturan di config.js, atau lebih besar jika HP melaporkan keterlambatan suara */
+function candleWait(){
+  const lat=actx?((actx.outputLatency||0)+(actx.baseLatency||0))*1000:0;
+  return Math.max(CONFIG.candleDelay||0,lat+60);
+}
 let blowing=false;
 function blowAll(){
   if(blowing) return; blowing=true; startBirthday(); stopMic();
-  $$('#cake .fl:not(.off)').forEach((f,i)=>setTimeout(()=>snuff(f),i*600+(CONFIG.candleDelay||0)));
+  $$('#cake .fl:not(.off)').forEach((f,i)=>setTimeout(()=>snuff(f),i*600+candleWait()));
 }
 function stopMic(){
   cancelAnimationFrame(raf);
