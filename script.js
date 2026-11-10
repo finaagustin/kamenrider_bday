@@ -35,8 +35,9 @@ function typeLetter(){
 /* tiup lilin: mikrofon, atau ketuk api sebagai cadangan */
 let stream=null,ac=null,raf=null;
 function cakeStart(){
+  initAudio();
   $$('#cake .fl').forEach(f=>f.classList.remove('off'));
-  $('#blower').onclick=blowAll; blowing=false;
+  $('#blower').onpointerdown=blowAll; $('#blower').onclick=blowAll; blowing=false;
   $('#wish').classList.remove('on');
   $('#cakehint').textContent='Buat permintaan dulu… lalu ketuk Kamen Rider untuk meniup lilin 🎂';
   micStart();
@@ -51,8 +52,8 @@ function snuff(f){
 }
 let blowing=false;
 function blowAll(){
-  if(blowing) return; blowing=true; stopMic(); startBirthday();
-  $$('#cake .fl:not(.off)').forEach((f,i)=>setTimeout(()=>snuff(f),i*600));
+  if(blowing) return; blowing=true; startBirthday(); stopMic();
+  $$('#cake .fl:not(.off)').forEach((f,i)=>setTimeout(()=>snuff(f),i*600+(CONFIG.candleDelay||0)));
 }
 function stopMic(){
   cancelAnimationFrame(raf);
@@ -116,6 +117,8 @@ function initAudio(){
   if(!actx){
     const AC=window.AudioContext||window.webkitAudioContext; if(!AC) return;
     actx=new AC(); master=actx.createGain(); master.gain.value=muted?0:1; master.connect(actx.destination);
+    /* nada senyap yang terus berjalan: menjaga speaker HP tetap 'bangun' agar lagu tidak telat */
+    const w=actx.createOscillator(), wg=actx.createGain(); wg.gain.value=0.0001; w.connect(wg); wg.connect(actx.destination); w.start();
   }
   if(actx.state==='suspended') actx.resume();
 }
@@ -140,7 +143,7 @@ let hbOn=false, hbTimer=null, hbGain=null;
 function playHB(){
   if(!actx||!hbOn) return;
   hbGain=actx.createGain(); hbGain.gain.value=1; hbGain.connect(master);
-  const beat=.52; let t=actx.currentTime+.15, total=0;
+  const beat=.52; let t=actx.currentTime+.02, total=0;
   HB.forEach(([f,b])=>{ tone(f,t,b*beat*1.5,'triangle',.26,hbGain); tone(f*2,t,b*beat*.9,'sine',.07,hbGain); t+=b*beat; total+=b*beat; });
   hbTimer=setTimeout(playHB,(total+1.5)*1000);          /* diulang sampai layar "ulangi" ditekan */
 }
